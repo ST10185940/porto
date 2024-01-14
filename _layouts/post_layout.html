@@ -1,0 +1,41 @@
+---
+layout : default
+---
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="/assets/js/script.js" defer></script>
+
+    <link rel="icon" href="/assets/images/favicon-32x32.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/assets/images/favicon-32x32.png" type="image/x-icon">
+
+    <title>{{page.title}}</title>
+</head>
+<body>
+    <section class="main-home">
+        <div class="top-island">          
+            <nav>
+                <p>sitholemoses108@gmail.com</p>          
+                <ul class="main-nav">
+                    <li><a href="/index.html">Home</a></li> 
+                    <li>&nbsp;/ <a href="/blog.html">Blog</a></li>
+                    <li>&nbsp;/ <a href="/about.html">About</a></li>
+                </ul>
+            </nav>          
+        </div>
+        <br>
+        <h1 style="text-align: left;">{{ page.title }}</h1>
+        <p>{{ page.date | date_to_string }} - {{ page.author }}</p>
+        <br>
+        <div class="content">
+            {{ content }}
+        </div>
+    </section>
+</body>
+</html>
+

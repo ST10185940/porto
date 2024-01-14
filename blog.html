@@ -1,0 +1,71 @@
+---
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets\css\style.css">
+    <script src="assets\js\script.js" defer></script>
+
+    <link rel="icon" href="/assets/images/favicon-32x32.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/assets/images/favicon-32x32.png" type="image/x-icon">
+
+    {% feed_meta %}
+    {% seo %}
+
+    <title>Posts</title>
+</head>
+<body>
+    <section class="main-home">
+        <div id="date"></div>
+        <br>
+        <div class="top-island">          
+            <nav>
+                <p>sitholemoses108@gmail.com</p>          
+                <ul class="main-nav">
+                    <li><a href="index.html">Home</a></li> 
+                    <li>&nbsp;/ <a href="blog.html">Blog</a></li>
+                    <li>&nbsp;/ <a href="about.html">About</a></li>
+                </ul>
+            </nav>          
+        </div>
+        <br>
+            <div class="blog-hero">
+
+                <div>
+                    <img src="/assets/images/interface.jpg" alt="a distant world"  loading="eager">
+                    <br>
+                    <br>
+                    <p class="light-text"><i>image made with <a href="https://app.runwayml.com"><u>RunwayAI</u></a></i></p>
+                </div>
+                <div class="blog-hero-txt">
+                    <h2> Synthetic Sagas </h2>
+                    <p>A blog by <a href="index.html"> <strong><u>Moses S.</u> </strong></a> 
+                        on everything.
+                    </p>
+                </div>
+            </div>  
+            <br>
+            <h2>Posts</h2>
+            <br>
+            {% for post in site.posts %}
+                <li>
+                    <div class="post">
+                        <br>
+                        <p class="light-text">{{ post.duration }} min read</p>
+                        <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>                  
+                        <p>{{ post.excerpt }}</p>
+                        <hr>
+                    </div>
+                
+                </li>
+            {% endfor %}
+
+            <br>
+
+    </section>
+    
+</body>
+</html>
