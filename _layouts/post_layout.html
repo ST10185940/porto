@@ -10,8 +10,8 @@ layout : default
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="assets/js/script.js"></script>
 
-    <link rel="icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
-    <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
+    <link rel="icon" href="{{ assets/images/favicon-32x32.png | relative_url }}  " type="image/x-icon">
+    <link rel="shortcut icon" href="{{ assets/images/favicon-32x32.png  | relative_url }}" type="image/x-icon">
 
     <title>{{page.title}}</title>
 </head>
@@ -21,9 +21,9 @@ layout : default
             <nav>
                 <p>sitholemoses108@gmail.com</p>          
                 <ul class="main-nav">
-                    <li><a href="/_site/index.html">Home</a></li> 
-                    <li>&nbsp;/ <a href="/_site/blog.html ">Blog</a></li>
-                    <li>&nbsp;/ <a href="/_site/about.html">About</a></li>
+                    <li><a href="{{/index.html | relative_url}}">Home</a></li> 
+                    <li>&nbsp;/ <a href="{{ /blog.html | relative_url }}">Blog</a></li>
+                    <li>&nbsp;/ <a href="{{/about.html | relative_url }}">About</a></li>
                 </ul>
             </nav>          
         </div>
