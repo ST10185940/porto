@@ -4,7 +4,7 @@ This is a personal portfolio website built using HTML, CSS, JavaScript, and Jeky
 
 ## Stack
 
-- Custom CSS, a pinch JS
+- Custom CSS, a pinch JS.
 - Jekyll: Used as a static site generator to simplify the development process and allow for easy content management.
 - GitHub Pages: Used for hosting the final website and making it accessible on the internet.
 

@@ -1,4 +1,3 @@
-baseurl: /porto
 
 plugins:
   - jekyll-feed

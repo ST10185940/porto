@@ -5,12 +5,12 @@
 <lastmod>2024-01-13T00:00:00+02:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/porto/about.html</loc>
+<loc>http://localhost:4000/porto/about</loc>
 </url>
 <url>
-<loc>http://localhost:4000/porto/blog.html</loc>
+<loc>http://localhost:4000/porto/blog</loc>
 </url>
 <url>
-<loc>http://localhost:4000/porto/</loc>
+<loc>http://localhost:4000/porto/index</loc>
 </url>
 </urlset>
