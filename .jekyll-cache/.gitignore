@@ -1,8 +1,2 @@
-# Ignore everything
-/*
 
-# Except for these files
-!.gitignore
-!Gemfile
-!Gemfile.lock
 
