@@ -1,4 +1,6 @@
 
+baseurl: /porto
+
 plugins:
   - jekyll-feed
   - jekyll-sitemap
