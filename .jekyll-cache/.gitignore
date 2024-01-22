@@ -1,8 +1,2 @@
 
-# Output directory
-_site/
-
-# Jekyll build directory
-.sass-cache/
-.jekyll-cache/
 
