@@ -24,7 +24,7 @@
         <br>
         <div class="top-island">          
             <nav>
-                <p>sitholemoses108@gmail.com</p>          
+                <p style="color: rgb(87, 87, 87);">sitholemoses108@gmail.com</p>          
                 <ul class="main-nav">
                     <li><a href="index.html">Home</a></li> 
                     <li>&nbsp;/ <a href="blog.html">Blog</a></li>
@@ -38,15 +38,37 @@
                 <div>
                     <img src="assets/images/interface.jpg" alt="a distant world"  loading="eager">
                     <br>
-                    <br>
                 </div>
                 <div class="blog-hero-txt">
                     <h2>Synthetic Sagas </h2>
                     <p>A blog by <a href="index.html"> <strong><u>Moses S.</u> </strong></a> 
                         on everything.
                     </p>
+                
+                    <form action="">
+                        <input type="text"  required placeholder="email" name="email" id="">
+                        <button type="submit" value="Subscribe">submit</button>  *Soon 
+                    </form>
                 </div>
-            </div>  
+            </div>
+            <br>  
+            <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&duration=3000&pause=1000&color=4FBDBD&repeat=false&random=false&width=435&lines=Welcome+to+a+sector+of+my+brain+;Go+ahead%2C+Read+something!" alt="Typing SVG" />           
+            <!--button onclick="playAudio()" id="control">Anoint yourself to the purity of the bless-ed machine</button>
+            <script>
+            var audio = new Audio('/assets/Starboy.mp3');
+            audio.volume = 0.01;
+            audio.loop = true;
+
+            function playAudio() {
+                if(audio.paused || audio.ended){
+                    audio.play();
+                    document.getElementById('control').innerHTML = "Pause";
+                }else{
+                    audio.pause();
+                    document.getElementById('control').innerHTML = " Continue Anointing";
+                }
+            }
+            </script-->
             <br>
             <h2>Posts</h2>
             <br>
@@ -54,7 +76,7 @@
                 <li>
                     <div class="post">
                         <br>
-                        <p class="light-text">{{ post.duration }} min read</p>
+                        <p class="light-text">~{{ post.duration }} min read~</p>
                         <h4><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h4>                  
                         <p>{{ post.excerpt }}</p>
                         <hr>
