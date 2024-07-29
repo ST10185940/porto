@@ -1,13 +1,17 @@
 html{
     scroll-behavior: smooth;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Tirto;
     font-size: 100%;
     -webkit-text-size-adjust: auto;
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
     text-size-adjust: 100%; 
     user-select: none;
+}
 
+@font-face {
+    font-family: Tirto;
+    src: url(/assets/css/TirtoWritterRegular-Eajrl.ttf);
 }
 
 body::-webkit-scrollbar {
@@ -31,9 +35,11 @@ a:hover{
 
 .main-home{
     max-width: 30%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
     padding: 20px;
     text-align: justify;     
-    transform: translateX(100%); 
 }
 
 .light-text{
@@ -89,7 +95,6 @@ nav{
     text-align: center;
 }
 
-
 img{
     width: 50%;   
     border-radius: 4px;
@@ -138,7 +143,6 @@ img{
     color: rgb(78, 78, 78);  
 }
 
-
 .blog-img{
     height: 25%;
 }
@@ -150,8 +154,7 @@ form , input {
     border-radius: 5px;
     color: black;
     border: 1px solid black;
-    background-image: url("https://www.transparenttextures.com/patterns/brushed-alum-dark.png");
-    
+    background-image: url("https://www.transparenttextures.com/patterns/brushed-alum-dark.png"); 
 }
 
 button{
@@ -167,14 +170,18 @@ button:hover{
     color: white;
 }
 
-
+.text{
+    position:absolute;
+    left:50%;
+    top: 50%;
+    transform: translate(-50% ,-50%);
+}
 
 @media (max-width: 600px) {
     .main-home {
         max-width: 100%;
         padding: 1px;
         text-align: center;     
-        transform: translateX(0%);
     }
 
     .blog-hero-txt{
@@ -188,6 +195,7 @@ button:hover{
         max-height: 100%;
         display: inline;
     }
+
     img{
         width: 90%;   
         border-radius: 5px;
@@ -204,7 +212,7 @@ button:hover{
     }
 
     html{
-        font-size: 100%;
+      font-size: 100%;
     }
 
    nav{
@@ -214,25 +222,18 @@ button:hover{
    .main-nav{
      padding: 0;
      margin-left: 15%;
-
    }
 
    ul{
       margin-left: -10%;
    }
-
-   
-
 }
 
 @media (min-width:601px) and (max-width:900px){
-
-
     .main-home {
         max-width: 70%;
         padding: 50px;
         text-align: center;     
-        transform: translateX(10%);
     }
 
     .blog-hero-txt{
@@ -252,7 +253,6 @@ button:hover{
         border-radius: 5px;
     }
 
-
     html{
         font-size: medium;
     }
@@ -267,7 +267,6 @@ button:hover{
      margin-left: -1%;
      font-size: smaller;
    }
-
 }
 
 @media (min-width:901px) and (max-width:1200px){
@@ -275,7 +274,6 @@ button:hover{
         max-width: 40%;
         padding: 20px;
         text-align: justify;     
-        transform: translateX(65%); 
     }
 
     .blog-hero-txt{
@@ -316,7 +314,6 @@ button:hover{
         max-width: 40%;
         padding: 20px;
         text-align: justify;     
-        transform: translateX(65%); 
     }
 
     .blog-hero-txt{
