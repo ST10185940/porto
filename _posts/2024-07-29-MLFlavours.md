@@ -1,6 +1,6 @@
 ---
 
-title: "Mahcine Learning Flavours For Networking"
+title: "Machine Learning Flavours For Networking"
 date: 2024-07-29
 author: Moses S.
 layout: post_layout

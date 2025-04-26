@@ -1,69 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moses S.</title>
+    <link rel="stylesheet" href="projectStyle.css">
+    <link rel="icon" url="https://cdn-icons-png.flaticon.com/128/1336/1336494.png" type="image/x-icon">
+    <link rel="shortcut icon" url="https://cdn-icons-png.flaticon.com/128/1336/1336494.png" type="image/x-icon">
+    <style>
+        #live-message {
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            font-size: 1em;
+            color: #333;
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-left: 5px solid #0066cc;
+            margin: 20px 0;
+            animation: fadeInOut 2s infinite;
+        }
+        @keyframes fadeInOut {
+            0%, 100% { opacity: 0.7; }
+            50% { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>Moses S.</h1>
+            <p>Junior Developer • BSc Undergraduate • Researcher In Training</p>
+            <!-- <div id="live-message"></div> -->
+            <div class="section">
+                <h2>Languages & Technologies </h2>
+                <p>C# ASP.NET • PHP • JS (MEAN) Stack • SQL(Oracle,MySQL) • MongoDB • GitHub, Git • Java • Python • React • Node.js • Express.js • RESTful APIs • Docker • Kubernetes • HTML5 • CSS3 • Bootstrap • Responsive Web Design • Agile/Scrum • Unit Testing • AWS • Azure • CI/CD • TypeScript</p>
+            </div>
+            <div class="section">
+                <h2>Projects & Accomplishments</h2>
+                <p>• <a href="https://github.com/Relic899/WIL_Group10_TEC_Project.git">A CRM with automated reporting and staff management</a></p>
+                <p>• <a href="https://github.com/ST10185940/Textbook-Trove.git">E-Commerce site with user authentication and product management</a></p>
+                <p>• <a href="">Informational website with responsive design and contact forms</a></p>
+                <p>• <a href="https://github.com/ST10185940/CourseCompanion-master.git">Desktop Application (WPF) for productivity and data management</a></p>
+                <p>• RESTful APIs for seamless data integration and microservices</p>
+                <p>• Database design and optimization (SQL and NoSQL)</p>
+            </div>
 
-  <div id="Web">
-    <a href="">
-        <div class="project">
-            <p><strong>Course Companion</strong> - Productivity app with user-auth, CRUD, and a full-on ASP.Net web version.</p>
-            <p>With: C# ASP.NET-Core (MVC) and MySQL </p>
+            <div class="section">
+                <h2>Contact</h2>
+                <p><a href="mailto:s.moses.pro@gmail.com">Email</a> • <a href="https://www.linkedin.com/in/thisdevmoses">LinkedIn</a> • <a href="https://github.com/ST10185940">GitHub</a></p>
+            </div>
         </div>
-    </a>
-    <br>
-    <a href="">
-        <div class="project">
-            <p><strong>Textbook Trove</strong> - A 2nd-hand online textbook store with user-auth, CRUD operations, and an admin dashboard.</p>
-            <p>With: PHP and MySQL </p>
+        <div class="image-space">
+            <img src="https://plus.unsplash.com/premium_vector-1716910449787-ce65ae43d54e?q=80&w=1800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Interface Image" title="Illustration by Razvan Vezeteu">
         </div>
-    </a>
-    <br>
-    <a href="">
-        <div class="project">
-            <p><strong>Blue Trident</strong> - A basic information site providing an online presence for a veteran tech company (hypothetical) ,with form-validation.</p>
-            <p>With: BootStrap and JS-validation</p>
-        </div>
-    </a>
-  </div>
+    </div>
+    <script>
+        const messages = [
+            "Welcome to my portfolio! Explore my projects and skills.",
+            "Thanks for visiting! Feel free to reach out for collaborations.",
+            "Constantly learning and growing in the world of software development.",
+            "Open to new opportunities and exciting challenges in tech."
+        ];
+        
+        let currentIndex = -1;
+        
+        function updateMessage() {
+            const messageElement = document.getElementById('live-message');
+            let newIndex;
+            do {
+                newIndex = Math.floor(Math.random() * messages.length);
+            } while (newIndex === currentIndex);
+            
+            currentIndex = newIndex;
+            
+            fadeOut(messageElement, () => {
+                messageElement.textContent = messages[currentIndex];
+                fadeIn(messageElement);
+            });
+        }
 
-  <div id="Mobile">
-    <a href="">
-        <div class="project">
-            <p><strong>Mobile App Name</strong> - description.</p>
-            <p>With: [Stack] </p>
-        </div>
-    </a>
-    <br>
-    <a href="">
-        <div class="project">
-            <p><strong>Mobile App Name</strong> - description.</p>
-            <p>With: [Stack] </p>
-        </div>
-    </a>
-    <br>
-    <a href="">
-        <div class="project">
-            <p><strong>Mobile App Name</strong> - description.</p>
-            <p>With: [Stack] </p>
-        </div>
-    </a>
-  </div>
+        function fadeOut(element, callback) {
+            let opacity = 1;
+            const timer = setInterval(() => {
+                if (opacity <= 0.1) {
+                    clearInterval(timer);
+                    element.style.opacity = 0;
+                    callback();
+                }
+                element.style.opacity = opacity;
+                opacity -= opacity * 0.1;
+            }, 50);
+        }
 
-  <div id="Desktop">
-    <a href="">
-        <div class="project">
-            <p><strong>Desktop App Name</strong> - description.</p>
-            <p>With: [Stack] </p>
-        </div>
-    </a>
-    <br>
-    <a href="">
-        <div class="project">
-            <p><strong>Desktop App Name</strong> - description.</p>
-            <p>With: [Stack] </p>
-        </div>
-    </a>
-    <br>
-    <a href="">
-        <div class="project">
-            <p><strong>Desktop App Name</strong> - description.</p>
-            <p>With: [Stack] </p>
-        </div>
-    </a>
-  </div>
+        function fadeIn(element) {
+            let opacity = 0;
+            element.style.opacity = opacity;
+            const timer = setInterval(() => {
+                if (opacity >= 1) {
+                    clearInterval(timer);
+                }
+                element.style.opacity = opacity;
+                opacity += opacity * 0.1 || 0.1;
+            }, 50);
+        }
+
+        updateMessage();
+        setInterval(updateMessage, 5000);
+    </script>
+</body>
+</html>
